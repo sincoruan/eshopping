@@ -1,0 +1,28 @@
+server:
+  port: ${PORT:9999}
+
+zuul:
+  routes:
+    testabc:
+      serviceId: test
+      path: /testabc/**
+    api-user:
+      path: /api-account/**
+      serviceId: eshop-account
+      url: http://account-service:8081/
+    api-product:
+      path: /api-product/**
+      serviceId: eshop-product
+      url: http://product-service:8082/
+    api-order:
+      path: /api-order/**
+      serviceId: eshop-order
+      url: http://order-service:8083/
+
+auth-url: http://ea-auth-service:8888
+
+exclude-routes:
+  urls: /api-account/login,/api-account/register,/api-account/
+
+api:
+  key: ${API-KEY}
