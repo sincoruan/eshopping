@@ -18,6 +18,11 @@ spec:
           ports:
             - containerPort: 8888
           env:
+            - name: "API-KEY"
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: service-api-key
             - name: "PORT"
               value: "8888"
   selector:
