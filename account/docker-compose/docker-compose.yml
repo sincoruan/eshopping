@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  web:
+    restart: always
+    image: ruanxingke/service1
+    container_name: web
+    ports:
+      - 8081:8081
+    environment:
+      LOCAL_HOST: 192.168.211.132

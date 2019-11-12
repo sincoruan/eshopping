@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order
+  labels:
+    app: order
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: order
+      labels:
+        app: order
+    spec:
+      containers:
+        - name: order
+          image: ruanxingke/order
+          ports:
+            - containerPort: 8083
+          env:
+            - name: "API-KEY"
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: service-api-key
+            - name: "PORT"
+              value: "8083"
+            - name: "DATABASE_HOST"
+              value: "mysql-service"
+            - name: "DATABASE_PORT"
+              value: "3306"
+  selector:
+    matchLabels:
+      app: order
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-service
+spec:
+  selector:
+    app: order
+  ports:
+    - port: 8083
+      targetPort: 8083
+  type: ClusterIP
+

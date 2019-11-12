@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product
+  labels:
+    app: product
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: product
+      labels:
+        app: product
+    spec:
+      containers:
+        - name: product
+          image: ruanxingke/product
+          ports:
+            - containerPort: 8082
+          env:
+            - name: "API-KEY"
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: service-api-key
+            - name: "PORT"
+              value: "8082"
+            - name: "DATABASE_HOST"
+              value: "mysql-service"
+            - name: "DATABASE_PORT"
+              value: "3306"
+  selector:
+    matchLabels:
+      app: product
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-service
+spec:
+  selector:
+    app: product
+  ports:
+    - port: 8082
+      targetPort: 8082
+  type: ClusterIP
+

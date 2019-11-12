@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: account
+  labels:
+    app: account
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: account
+      labels:
+        app: account
+    spec:
+      containers:
+        - name: account
+          image: ruanxingke/account
+          ports:
+            - containerPort: 8081
+          env:
+            - name: "API-KEY"
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: service-api-key
+            - name: "PORT"
+              value: "8081"
+            - name: "DATABASE_HOST"
+              value: "mysql-service"
+            - name: "DATABASE_PORT"
+              value: "3306"
+  selector:
+    matchLabels:
+      app: account
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: account-service
+spec:
+  selector:
+    app: account
+  ports:
+    - port: 8081
+      targetPort: 8081
+  type: ClusterIP
+

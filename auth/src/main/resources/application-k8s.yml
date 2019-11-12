@@ -1,0 +1,16 @@
+router:
+  auth:
+    url: http://auth-service:8888
+  account:
+    url: http://account-service:8081
+  order:
+    url: http://order-service:8083
+  product:
+    url: http://product-service:8082
+api:
+  key: ${API-KEY}
+
+token_eff_duration: 36000000
+
+server:
+  port: ${PORT:8888}

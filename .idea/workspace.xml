@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2cd46cf9-3eaa-42ce-b21c-6b944fb67b63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/account/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/account/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application-k8s.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/auth/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/auth/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application-k8s.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/order/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/order/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order/deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/application-k8s.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/product/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/product/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product/deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/resources/application-k8s.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TLN72mhweUFU0kNWa5xN04dnpV" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="F:/MUM/EA/demo/miniprojectk8s/services" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.edu" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.edu.order.repository" />
+      <recent name="com.edu.order.vo" />
+      <recent name="com.edu.account.repository" />
+      <recent name="com.edu.zuul.VO" />
+      <recent name="com.edu.auth.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\MUM\EA\project2\git\test\product\src\main\java\com\edu\product\domain" />
+      <recent name="F:\MUM\EA\project2\git\test\order\src\main\java\com\edu\order\domain" />
+      <recent name="F:\MUM\EA\project2\git\test\zuul" />
+      <recent name="F:\MUM\EA\project2\git\test\product" />
+      <recent name="F:\MUM\EA\project2\git\test\order" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ZuulApplication">
+    <configuration name="AuthApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edu.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.edu.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.edu.auth.AuthApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="account" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.account.AccountApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.order.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.product.ProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.zuul.ZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AuthApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.AccountApplication" />
+      <item itemvalue="Spring Boot.AuthApplication" />
+      <item itemvalue="Spring Boot.ProductApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AuthApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2cd46cf9-3eaa-42ce-b21c-6b944fb67b63" name="Default Changelist" comment="" />
+      <created>1573235244536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573235244536</updated>
+      <workItem from="1573235247390" duration="221000" />
+      <workItem from="1573235549969" duration="4803000" />
+      <workItem from="1573244107113" duration="2393000" />
+      <workItem from="1573248347718" duration="57341000" />
+      <workItem from="1573359607567" duration="7300000" />
+      <workItem from="1573401042568" duration="21373000" />
+      <workItem from="1573446780673" duration="6299000" />
+      <workItem from="1573520772898" duration="3644000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

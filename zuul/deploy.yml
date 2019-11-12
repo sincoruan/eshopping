@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zuul
+  labels:
+    app: zuul
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: zuul
+      labels:
+        app: zuul
+    spec:
+      containers:
+        - name: zuul
+          image: ruanxingke/zuul
+          ports:
+            - containerPort: 9999
+          env:
+            - name: "PORT"
+              value: "9999"
+  selector:
+    matchLabels:
+      app: zuul
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: zuul-service
+spec:
+  selector:
+    app: zuul
+  ports:
+    - port: 9999
+      targetPort: 9999
+      nodePort: 30005
+  type: NodePort

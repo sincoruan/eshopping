@@ -1,0 +1,16 @@
+router:
+  auth:
+    url: http://localhost:8888
+  account:
+    url: http://localhost:8081
+  order:
+    url: http://localhost:8083
+  product:
+    url: http://localhost:8082
+api:
+  key: secret
+
+token_eff_duration: 36000000
+
+server:
+  port: 8888

@@ -1,0 +1,9 @@
+* 
+X Error loading profile config: open /home/ruanxk/.minikube/profiles/minikube/config.json: permission denied
+* 
+* Sorry that minikube crashed. If this was unexpected, we would love to hear from you:
+  - https://github.com/kubernetes/minikube/issues/new/choose
+* Verifying dashboard health ...
+* Launching proxy ...
+* Verifying proxy health ...
+http://127.0.0.1:43689/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
