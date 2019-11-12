@@ -71,7 +71,7 @@ public class MyFilter2 extends ZuulFilter {
         context.addZuulRequestHeader("api-key", apiKey);
         System.out.println(apiKey);
         for(String exurl:excludeUrls) {
-            if(exurl.equals(url))
+            if(url.indexOf(exurl)>=0)
                 return null;
         }
 

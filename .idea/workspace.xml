@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2cd46cf9-3eaa-42ce-b21c-6b944fb67b63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/edu/zuul/filter/MyFilter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/edu/zuul/filter/MyFilter2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +162,7 @@
       <workItem from="1573401042568" duration="21373000" />
       <workItem from="1573446780673" duration="6299000" />
       <workItem from="1573520772898" duration="3644000" />
-      <workItem from="1573525075921" duration="6244000" />
+      <workItem from="1573525075921" duration="7746000" />
     </task>
     <servers />
   </component>
