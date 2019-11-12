@@ -2,4 +2,4 @@
 mvn clean
 mvn install -Dmaven.test.skip=true
 docker build -t ruanxingke/product .
-#docker push ruanxingke/product
+docker push ruanxingke/product
