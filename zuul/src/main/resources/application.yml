@@ -42,7 +42,7 @@ zuul:
       url: http://order-service:8083/
 
 api:
-  key: secret
+  key: ${API-KEY}
 #  ignored-services: "*"
 #  prefix: /eshop
 
@@ -51,4 +51,4 @@ router:
     url: http://auth-service:8888
 
 exclude-routes:
-  urls: http://localhost:9999/api-account/login,http://localhost:9999/api-account/register
+  urls: http://localhost:9999/api-account/login,http://localhost:9999/api-account/register,http://localhost:9999/api-account/
