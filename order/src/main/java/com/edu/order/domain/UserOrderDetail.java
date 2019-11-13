@@ -15,8 +15,6 @@ public class UserOrderDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    @OneToOne
-    Product product;
-    @NotNull
+    long productid;
     Long numberOfProduct;
 }

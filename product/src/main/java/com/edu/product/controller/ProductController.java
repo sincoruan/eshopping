@@ -2,6 +2,7 @@ package com.edu.product.controller;
 
 import com.edu.product.domain.Product;
 import com.edu.product.repository.ProductRepository;
+import com.edu.product.vo.ResultVO;
 import org.apache.tomcat.util.http.fileupload.RequestContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,9 +25,13 @@ public class ProductController {
     }
 
     @PostMapping("/addProduct")
-    public Product addProduct(@RequestBody Product product){
+    public ResultVO<Product> addProduct(@RequestBody Product product){
+        ResultVO<Product> resultVO = new ResultVO<Product>();
         productRepository.save(product);
-        return product;
+        resultVO.setCode(0);
+        resultVO.setMsg("success");
+        resultVO.setData(product);
+        return resultVO;
     }
     @PostMapping("/deleteProduct")
     public long deleteProduct(@PathVariable Long id){
@@ -39,9 +44,20 @@ public class ProductController {
         List<Product> productList = productRepository.findAll();
         return productList;
     }
+    @PostMapping("/addProductCountById/{id}/{count}")
+    public String addProductCountById( @PathVariable long id,@PathVariable int count){
+        productRepository.addProductById(count,id);
+        return "success";
+    }
 
-    @PostMapping("/updateProductCountById/{id}/{count}")
-    public Product updateProduct( @RequestBody Product product){
-        return product;
+    @PostMapping("/sellProductCountById/{id}/{count}")
+    public String sellProductCountById(@PathVariable long id, @PathVariable int count){
+        Product product  = productRepository.findProductById(id);
+        if(product.getCount()<count) {
+            return "fail";
+        }else{
+            productRepository.minusProductById(count,id);
+            return "success";
+        }
     }
 }

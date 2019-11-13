@@ -17,15 +17,10 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @NotEmpty
     String productName;
-    @NotEmpty
     String productContent;
-    @NotEmpty
     String productImgUrl;
-    @NotNull
     Long price;
-    @NotEmpty
     int count;
 
 }

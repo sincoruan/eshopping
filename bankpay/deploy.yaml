@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bankpay
+  labels:
+    app: bankpay
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: bankpay
+      labels:
+        app: bankpay
+    spec:
+      containers:
+        - name: bankpay
+          image: ruanxingke/bankpay
+          ports:
+            - containerPort: 8084
+          env:
+            - name: "API-KEY"
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: service-api-key
+            - name: "PORT"
+              value: "8084"
+            - name: "DATABASE_HOST"
+              value: "mysql-service"
+            - name: "DATABASE_PORT"
+              value: "3306"
+  selector:
+    matchLabels:
+      app: bankpay
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bankpay-service
+spec:
+  selector:
+    app: bankpay
+  ports:
+    - port: 8084
+      targetPort: 8084
+  type: ClusterIP

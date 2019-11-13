@@ -20,6 +20,11 @@ router:
     url: http://order-service:8083
   product:
     url: http://product-service:8082
+  bankpay:
+    url: http://bankpay-service:8084
+  paypalpay:
+    url: http://paypalpay-service:8085
+
 api:
   key: ${API-KEY}
 

@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: paypalpay
+  labels:
+    app: paypalpay
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: paypalpay
+      labels:
+        app: paypalpay
+    spec:
+      containers:
+        - name: paypalpay
+          image: ruanxingke/paypalpay
+          ports:
+            - containerPort: 8085
+          env:
+            - name: "API-KEY"
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: service-api-key
+            - name: "PORT"
+              value: "8085"
+            - name: "DATABASE_HOST"
+              value: "mysql-service"
+            - name: "DATABASE_PORT"
+              value: "3306"
+  selector:
+    matchLabels:
+      app: paypalpay
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: paypalpay-service
+spec:
+  selector:
+    app: paypalpay
+  ports:
+    - port: 8085
+      targetPort: 8085
+  type: ClusterIP

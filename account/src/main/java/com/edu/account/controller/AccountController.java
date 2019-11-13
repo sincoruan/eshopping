@@ -34,6 +34,12 @@ public class AccountController {
     @Value("${api.key}")
     private String apiKey;
 
+    @Value("${router.paypalpay.url}")
+    private String paypalUrl;
+
+    @Value("${router.bankpay.url}")
+    private String bankUrl;
+
     private Gson gson = new Gson();
 
     @Autowired
@@ -96,6 +102,21 @@ public class AccountController {
         paymentRepository.save(payment);
         //userRepository.save(user);
         return payment;
+    }
+
+    @PostMapping("/pay/{type}/{amount}")
+    public String payment(@PathVariable("type") String type,@PathVariable double amount) {
+        ResultVO<String> resultVO = new ResultVO<String>();
+        System.out.println(type);
+        String paymentUrl = "";
+        if (type.equals("paypalpay")) {
+            paymentUrl = paypalUrl;
+        } else {
+            paymentUrl = bankUrl;
+        }
+
+        ResponseEntity<String> responseEntity =request(paymentUrl ,"{}");
+        return responseEntity.getBody();
     }
 
 
