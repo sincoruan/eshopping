@@ -2,44 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cd46cf9-3eaa-42ce-b21c-6b944fb67b63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/edu/account/controller/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankpay/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankpay/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankpay/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankpay/deploy.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankpay/src/main/java/com/edu/bankpay/contoller/PaypalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankpay/src/main/resources/application-k8s.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankpay/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paypalpay/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paypalpay/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paypalpay/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paypalpay/deploy.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/edu/product/vo/ResultVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/edu/account/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/edu/account/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application-k8s.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/edu/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/AddressType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/OrderStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/Payment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/UserOrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/edu/order/domain/UserOrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/edu/order/repository/UserOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/edu/order/repository/UserOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/application-k8s.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/edu/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/edu/product/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/edu/product/controller/ProductControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/edu/product/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/edu/product/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/edu/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/edu/product/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/edu/product/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/resources/application-k8s.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +179,8 @@
       <workItem from="1573446780673" duration="6299000" />
       <workItem from="1573520772898" duration="3644000" />
       <workItem from="1573525075921" duration="16039000" />
-      <workItem from="1573674108790" duration="12819000" />
+      <workItem from="1573674108790" duration="15316000" />
+      <workItem from="1573692588936" duration="46000" />
     </task>
     <servers />
   </component>

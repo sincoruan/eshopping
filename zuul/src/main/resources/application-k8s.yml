@@ -22,7 +22,7 @@ zuul:
 auth-url: http://ea-auth-service:8888
 
 exclude-routes:
-  urls: /api-account/login,/api-account/register,/api-account/
+  urls: /api-account/login,/api-account/register,/swagger-ui.html
 
 api:
   key: ${API-KEY}
