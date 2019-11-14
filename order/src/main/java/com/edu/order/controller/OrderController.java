@@ -97,7 +97,7 @@ public class OrderController {
             if(responseEntity.getBody().equals("fail"))
             {
                 resultVO.setCode(1);
-                resultVO.setMsg(responseEntity.getBody());
+                resultVO.setMsg("this product is out of stock");
                 return resultVO;
             }
 
