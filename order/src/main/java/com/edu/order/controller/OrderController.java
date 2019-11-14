@@ -105,7 +105,7 @@ public class OrderController {
         String payUrl = paymentUrl+"/pay/"+order.getPaymentMethod()+"/5";
         responseEntity = request(payUrl,"{}");
 
-        //userOrderRepository.updateUserOrderStatusById("PAID",order.getId());
+        userOrderRepository.updateUserOrderStatusById("SHIPPING",order.getId());
         resultVO.setCode(0);
         resultVO.setMsg(responseEntity.getBody());
 
